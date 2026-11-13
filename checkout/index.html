@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" data-route="/checkout">
+<head>
+  <base href="../" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#173d32" />
+  <meta name="description" content="CUP2EAT concept storefront. Explore biscuit cups made for tea, coffee, shakes and unforgettable zero-waste moments." />
+  <meta property="og:title" content="CUP2EAT | Eat Your Drink" />
+  <meta property="og:description" content="The cup is the treat. An editorial shopping experience for CUP2EAT edible cups." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>CUP2EAT — Eat Your Drink</title>
+  <script src="js/firebase-config.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement" role="status"><span class="announcement-dot"></span> THE CUP IS THE TREAT · DRINK IT, THEN EAT IT <span class="announcement-side">CONCEPT STORE · DEMO MODE</span></div>
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="./" class="logo" aria-label="CUP2EAT Home"><img class="brand-avatar" src="assets/reference-logo.png" alt="CUP2EAT supplied brand emblem" /><span class="logo-word">CUP<span>2</span>EAT<small>EDIBLE BY DESIGN</small></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a data-nav="home" href="./">Home</a><a data-nav="shop" href="shop/">Shop</a><a data-nav="orders" href="orders/">My Orders</a><a data-nav="story" href="story/">Our Story</a><a data-nav="wholesale" href="wholesale/">For Business</a><a data-nav="contact" href="contact/">Contact</a></nav>
+      <div class="header-actions">
+        <button class="icon-button search-launch" data-action="search" aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+        <a class="icon-button account-launch" href="account/" aria-label="My account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.3" r="3.7"/><path d="M4.5 21v-2.1a7.5 7.5 0 0 1 15 0V21"/></svg></a>
+        <button class="icon-button bag-button" data-action="cart" aria-label="Shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 8h14.8l1.2 12H3.4L4.6 8Z"/><path d="M8.4 9V6a3.6 3.6 0 0 1 7.2 0v3"/></svg><span id="cart-count" class="cart-count" hidden>0</span></button>
+        <button class="icon-button mobile-toggle" data-action="mobile-menu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="./">Home</a><a href="shop/">Shop the cups</a><a href="story/">Our story</a><a href="wholesale/">Wholesale & business</a><a href="account/">My account & orders</a><a href="contact/">Get in touch</a></nav>
+  </header>
+  <main id="app" tabindex="-1"><div class="loading-message">Preparing your next sip…</div></main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-lead"><p class="eyebrow light">SOMETHING GOOD IS BREWING</p><h2>One last sip.<br /><em>One less waste.</em></h2><a class="btn btn-outline-light" href="shop/">Explore the collection <span>↗</span></a></div>
+      <div class="footer-nav-group"><h3>Explore</h3><a href="shop/">Shop all cups</a><a href="story/">Our story</a><a href="wholesale/">Wholesale orders</a><a href="contact/">Contact us</a></div>
+      <div class="footer-nav-group"><h3>Customer care</h3><a href="account/">My account</a><a href="orders/">Track an order</a><a href="contact/">Shipping enquiries</a><a href="contact/">FAQs & support</a></div>
+      <div class="footer-nav-group"><h3>Find us</h3><p>Made for the way<br />the world drinks.</p><a href="https://www.instagram.com/cup2eat/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><p class="footer-social-note">@cup2eat</p></div>
+    </div>
+    <div class="container footer-bottom"><span class="logo-footer">CUP<span>2</span>EAT<span class="footer-dot">.</span></span><span>© <span id="year"></span> CUP2EAT · WEBSITE CONCEPT ONLY</span><span>DESIGNED TO BE DIFFERENT.</span></div>
+  </footer>
+  <div id="drawer-overlay" class="drawer-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-heading" aria-hidden="true"><div class="drawer-head"><div><span class="eyebrow">YOUR SELECTION</span><h2 id="drawer-heading">Your bag <span id="drawer-total-count">(0)</span></h2></div><button class="close-button" data-action="close-cart" aria-label="Close bag">×</button></div><div id="drawer-body" class="drawer-body"></div><div id="drawer-foot" class="drawer-foot"></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Search products" hidden><div class="search-box"><button class="close-button" data-action="close-search" aria-label="Close search">×</button><span class="eyebrow">FIND YOUR FAVOURITE</span><h2>What are you craving?</h2><input id="search-input" type="search" placeholder="Try chocolate, chai or vanilla…" autocomplete="off"/><p>Press Enter to view results.</p></div></div>
+  <noscript><div class="container" style="padding:5rem 1rem">This interactive demo needs JavaScript enabled.</div></noscript>
+</body>
+</html>

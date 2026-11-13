@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="680" viewBox="0 0 680 680">
+<defs>
+ <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E5E9D7"/><stop offset="1" stop-color="#f6f0e5"/></linearGradient>
+ <radialGradient id="shadow"><stop stop-color="#432d1b" stop-opacity=".33"/><stop offset="1" stop-color="#432d1b" stop-opacity="0"/></radialGradient>
+ <linearGradient id="cup" x1="0" y1="0" x2="1" y2=".4"><stop stop-color="#967040"/><stop offset=".24" stop-color="#D9B37C"/><stop offset=".57" stop-color="#F2DBB0"/><stop offset=".82" stop-color="#D9B37C"/><stop offset="1" stop-color="#967040"/></linearGradient>
+ <linearGradient id="edge"><stop stop-color="#967040"/><stop offset=".5" stop-color="#F2DBB0"/><stop offset="1" stop-color="#967040"/></linearGradient>
+ <pattern id="waffle" width="25" height="25" patternUnits="userSpaceOnUse" patternTransform="rotate(27)"><path d="M 0 0H25 M0 0V25" stroke="#633c21" stroke-opacity=".25" stroke-width="4"/><path d="M5 5H23 M5 5V23" stroke="#fff2d1" stroke-opacity=".28" stroke-width="2"/></pattern>
+ <clipPath id="clip"><path d="M263 210 Q330 220 397 210 L371 465 Q329 480 286 465 Z"/></clipPath>
+ <filter id="rough"><feTurbulence baseFrequency=".095" numOctaves="2" seed="5" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3"/></filter>
+ </defs>
+ <rect width="680" height="680" rx="12" fill="url(#back)"/>
+ <circle cx="530" cy="130" r="210" fill="#fff" opacity=".17"/>
+ <path d="M0 535 Q340 460 680 525 L680 680H0Z" fill="#fff8f0" opacity=".32"/>
+ <ellipse cx="342" cy="530" rx="195" ry="48" fill="url(#shadow)"/>
+ <g transform="rotate(-7 330 345)">
+ <path d="M263 210 Q330 220 397 210 L371 465 Q329 480 286 465 Z" fill="url(#cup)" stroke="#967040" stroke-width="3"/>
+ <g clip-path="url(#clip)"><rect x="245" y="205" width="180" height="290" fill="url(#waffle)" opacity=".9"/></g>
+ <path d="M263 211 Q330 217 397 211 L371 465 Q328 482 286 465 Z" fill="none" stroke="#967040" stroke-opacity=".2" stroke-width="6"/>
+ <ellipse cx="330" cy="210" rx="71" ry="24" fill="url(#edge)"/>
+ <ellipse cx="330" cy="207" rx="61" ry="17" fill="#402518"/>
+ <ellipse cx="330" cy="208" rx="55" ry="12" fill="#7b4b30"/>
+ <ellipse cx="318" cy="205" rx="21" ry="3" fill="#eee1c5" opacity=".45"/>
+ 
+ <path d="M292 246 Q309 301 302 425" fill="none" stroke="#fff1d0" stroke-opacity=".22" stroke-width="14" stroke-linecap="round"/>
+ </g>
+ <g opacity=".75">
+ 
+ 
+ <ellipse cx="185" cy="540" rx="16" ry="9" fill="#83915f" transform="rotate(30 185 540)"/><ellipse cx="206" cy="530" rx="14" ry="8" fill="#698154" transform="rotate(-45 206 530)"/>
+ 
+ 
+ </g>
+ <text x="340" y="615" font-family="Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="5" fill="#5d5647" opacity=".52">CUP 2 EAT</text>
+ </svg>
