@@ -1,10 +1,13 @@
-// Firebase Web App configuration (public values) for verified customer/admin login.
-// Copy the Web App values from your Firebase console. Do NOT paste service account credentials here.
+// Copy Web App config from Firebase Console > Project settings > Your apps.
+// Also copy Realtime Database URL from Build > Realtime Database > Data.
+// These are PUBLIC app identifiers, NOT service-account secrets.
 window.CUP2EAT_FIREBASE_CONFIG = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  appId: "",
-  functionsRegion: "asia-south1",
+  apiKey: "AIzaSyASs10vRwysc_cQe4aOUomF7HlIrJQihbc",
+  authDomain: "cuptoeat.firebaseapp.com",
+  databaseURL: "https://cuptoeat-default-rtdb.firebaseio.com",
+  projectId: "cuptoeat",
+  storageBucket: "cuptoeat.firebasestorage.app",
+  messagingSenderId: "716449048394",
+  appId: "1:716449048394:web:3a24eb10a982b2514503b3",
+  measurementId: "G-9BN75TFMYF"
 };
-// Blank config: shopping preview + local guest demo only; admin access stays locked.
